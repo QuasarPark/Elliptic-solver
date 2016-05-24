@@ -16,7 +16,7 @@ import scipy as np
 
 # input valuable
 
-a_major
-b_minor
-m_xx
-m_yy
+a_major =
+b_minor =
+m_xx =
+m_yy =
