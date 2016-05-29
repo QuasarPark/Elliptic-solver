@@ -83,6 +83,30 @@ def Xi_boundary(A_eff, B_eff):
     return math.atan(B_eff/A_eff)
 
 
+def root_finding():
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

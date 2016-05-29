@@ -51,3 +51,17 @@ def length_conv(majorAxisLength, a_b_ratio, m_xx, m_yy, angle):
 
 def solve_elliptic(a, b, m_xx, m_yy, angle, t_ox):
 
+    def solve_boundary():
+
+         se_conf = sp.mathieu_even_coef(m, q)
+         ce_conf = sp.mathieu_odd_coef(m, q)
+
+         def se_bnd_cond(m, q, z):
+             return (sp.mathieu_modcem1(m, q, z)[1] + sp.mathieu_modcem2(m, q, z)[1]
+             /sp.mathieu_modcem1(m, q, z)[0] + sp.mathieu_modcem2(m, q, z)[0])
+
+         def ce_bnd_solve(m, q, z):
+             return (sp.mathieu_modsem1(m, q, z)[1] + sp.mathieu_modsem2(m, q, z)[1]
+             /sp.mathieu_modsem1(m, q, z)[0] + sp.mathieu_modsem2(m, q, z)[0])
+
+
